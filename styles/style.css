@@ -211,7 +211,7 @@ button {
 }
 
 .lots {
-  margin: 180px 50px;
+  margin: 180px 50px 181px;
 }
 
 .lots__title {
@@ -233,12 +233,6 @@ button {
 }
 
 .lots__list-item {
-  width: 430px;
-  height: 450px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .lots__list-item_first {
@@ -246,6 +240,19 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
+}
+
+.card__link {
+  text-decoration: none;
+}
+
+.card {
+  width: 430px;
+  min-height: 450px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .lots__item-header {
@@ -298,6 +305,21 @@ button {
   font-weight: 400;
   line-height: normal;
   text-underline-offset: 5px;
+}
+
+.about {
+  margin: 0 50px;
+  position: relative;
+}
+
+.about__logo {
+  display: flex;
+  width: 430px;
+  height: 240px;
+  padding: 0px 95px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .footer {

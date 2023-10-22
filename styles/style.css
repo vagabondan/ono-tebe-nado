@@ -6,6 +6,11 @@ body {
   margin: auto;
 }
 
+section {
+  min-height: 100px;
+  background-color: blue;
+}
+
 .header {
   min-height: 100px;
   margin: 92px 49px;
@@ -15,8 +20,7 @@ body {
   height: 109px;
 }
 
-.header__nav-list {
-  list-style-type: circle;
+.header__nav {
   color: #000;
   font-family: Raleway;
   font-size: 18px;
@@ -27,8 +31,14 @@ body {
   align-items: center;
 }
 
-.header__address-list-item {
-  display: block;
+.header__nav-list {
+  list-style-type: circle;
+  display: flex;
+  align-items: center;
+}
+
+.header__nav-list-item_no-bullit {
+  list-style-type: none;
 }
 
 .header__nav-link {
@@ -68,13 +78,22 @@ body {
   height: 97px;
 }
 
+.header__address-list-item {
+  display: block;
+}
+
 .header__address-list-item-link {
   text-underline-offset: 4px;
 }
 
-section {
-  min-height: 100px;
-  background-color: blue;
+.jambotron {
+  width: 1440px;
+  height: 757px;
+  background-image: url("../images/cover.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  /* lightgray 50% / cover  */
 }
 
 .footer {

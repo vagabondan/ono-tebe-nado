@@ -11,6 +11,18 @@ section {
   background-color: blue;
 }
 
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-weight: inherit;
+  font-size: inherit;
+  text-align: inherit;
+  background-color: unset;
+  color: unset;
+}
+
 .header {
   min-height: 100px;
   margin: 92px 49px;
@@ -87,13 +99,118 @@ section {
 }
 
 .jambotron {
-  width: 1440px;
-  height: 757px;
   background-image: url("../images/cover.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50% 50%;
-  /* lightgray 50% / cover  */
+  background-position: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  background: #000;
+  position: absolute;
+  top: 0;
+}
+
+.jambotron__header {
+  margin: 165px 50px 237px;
+  color: #fff;
+  font-family: Raleway;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  z-index: 1;
+}
+
+.jambotron__header-left-first {
+  letter-spacing: 30px;
+  line-height: 115%; /* 115px */
+}
+
+.jambotron__header-left-others {
+  letter-spacing: 60px;
+  line-height: 115%; /* 115px */
+}
+
+.jambotron__header-center-first {
+  text-align: center;
+  line-height: 100%; /* 100px */
+  letter-spacing: 30px;
+}
+
+.jambotron__header-center-others {
+  line-height: 100%;
+  letter-spacing: 60px;
+}
+
+.jambotron__header-right-first {
+  text-align: right;
+  line-height: 100%; /* 100px */
+  letter-spacing: 60px;
+}
+
+.jambotron__header-right-second {
+  line-height: 100%;
+  letter-spacing: 30px;
+}
+
+.jambotron__header-right-third {
+  line-height: 100%;
+  letter-spacing: 0;
+}
+
+.jambotron__footer {
+  display: flex;
+  align-items: center;
+  gap: 78px;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+
+  color: #fff;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.jambotron__subline {
+  line-height: 28px; /* 127.273% */
+  text-transform: uppercase;
+  word-spacing: 22px;
+}
+
+.jambotron__subline-prelast {
+  word-spacing: 17px;
+}
+
+.jambotron__button {
+  width: 257px;
+  height: 52px;
+  line-height: normal;
+  border: 1px solid #fff;
+  color: #fff;
+
+  text-align: center;
+  font-family: Raleway;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
 }
 
 .footer {

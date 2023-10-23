@@ -232,9 +232,6 @@ button {
   margin-top: 27px;
 }
 
-.lots__list-item {
-}
-
 .lots__list-item_first {
   background-image: url("../images/card-lot-01.jpg");
   background-repeat: no-repeat;
